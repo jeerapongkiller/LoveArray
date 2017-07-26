@@ -9,6 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var memberTextField: UITextField!
+    @IBOutlet weak var memberlabel: UILabel!
+
+    @IBAction func addButton(_ sender: Any) {
+        
+        
+        
+        
+        
+    }   //นี่คือ Add Button
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
