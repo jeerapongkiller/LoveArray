@@ -11,13 +11,23 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    var strArrayMember = ["Master"]
     
     @IBOutlet weak var memberTextField: UITextField!
     @IBOutlet weak var memberlabel: UILabel!
 
     @IBAction func addButton(_ sender: Any) {
         
+        // Get Value From TextField
+        let strMember = memberTextField.text
+        print("strMember ==> \(String(describing: strMember))")
+        print("strArrayMember Before ==> \(strArrayMember)")
         
+        strArrayMember.append(strMember!)
+        print("strMember After ==> \(String(describing: strMember))")
+        
+        //Show Member
+        memberlabel.text = strArrayMember[0]
         
         
         
@@ -29,6 +39,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        memberlabel.sizeToFit()
+        
     }
 
     override func didReceiveMemoryWarning() {
