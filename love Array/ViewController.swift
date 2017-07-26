@@ -27,7 +27,20 @@ class ViewController: UIViewController {
         print("strMember After ==> \(String(describing: strMember))")
         
         //Show Member
-        memberlabel.text = strArrayMember[0]
+        //memberlabel.text = strArrayMember[0]
+        
+        var intIndex = 0
+        var strShow = ""
+        
+        
+        for strShowMember in strArrayMember{
+            
+            strShow = strShow + strShowMember + "\n"
+            print("strShow ==> \(strShow)")
+            //memberlabel.text = "\(intIndex)" + strShowMember
+            memberlabel.text = strShow
+            
+        }
         
         
         
